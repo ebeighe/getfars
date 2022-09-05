@@ -1,5 +1,7 @@
 # getfars
 
+Forked from fitnr. Around 2020, NHTSA re-issued current and back data to include columns with text
+(so no need for lookup tables/data anymore) e.g. the column STATENAME (text) was added where there only used to be STATE (an integer)
 Download [FARS (Fatality Analysis Reporting System)](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars) data and load it into a PostgreSQL database.
 
 This repo also contains many look-up tables derived from the [FARS User’s Manual](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812448).
