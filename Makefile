@@ -24,6 +24,7 @@ load: $(addprefix load-,$(tables))
 	$(psql) -v schema=$(SCHEMA) -f sql/constraint.sql
 	-$(psql) -v schema=$(SCHEMA) -f sql/spatial.sql
 
+# the copy.sh script does the unzipping
 load-%: FARS$(YEAR)NationalCSV.zip
 	./src/copy.sh $< $(SCHEMA) $*
 
