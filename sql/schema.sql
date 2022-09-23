@@ -349,10 +349,10 @@ CREATE TABLE safetyeq (
 
 -- This is the generated table code using the sqlite3 method; open the csv in sqlite, and dump the schema
 CREATE TABLE vehicle (
-   "STATE" TEXT,
+   state TEXT,
   "STATENAME" TEXT,
-  "ST_CASE" integer,
-  "VEH_NO"  integer,
+  st_case integer,
+  veh_no  integer,
   "VE_FORMS" TEXT,
   "NUMOCCS" TEXT,
   "NUMOCCSNAME" TEXT,
@@ -550,7 +550,7 @@ CREATE TABLE vehicle (
   "TRLR2GVWRNAME" TEXT,
   "TRLR3GVWR" TEXT,
   "TRLR3GVWRNAME" TEXT,
-    constraint vehicle_pk primary key ("ST_CASE", "VEH_NO")
+    constraint vehicle_pk primary key (st_case, veh_no)
 );
 
 CREATE TABLE vevent (
